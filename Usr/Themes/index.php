@@ -55,21 +55,25 @@
                 </div>
                 </div>
                 <br/>
-                <div class="mdui-clearfix">
+                <!--<div class="mdui-clearfix">-->
                   <div class="mdui-float-right">
                       <div class="mdui-row mdui-row-gapless">
                              <input type="submit" class="mdui-btn mdui-btn-raised mdui-color-deep-purple-accent border-comm-3" id="Post" value=" 发 射 ! " />
                       </div>
                   </div>
+                  
                   </form>
+                  
                   <div class="mdui-float-left">
                       <div class="mdui-row mdui-row-gapless">
-                          <button class="mdui-btn mdui-btn-raised mdui-color-deep-purple-accent border-comm-3" mdui-menu="{target: '#example-2'}"> ! 级 高 </button>
+                          <button class="mdui-btn mdui-btn-raised mdui-color-deep-purple-accent border-comm-3" mdui-dialog="{target: '#Advanced-1'}"> ! 级 高 </button>
                       </div>
                   </div>
-                </div>
+                <!--</div>-->
           </div>
         </div>
+
+
 
                   <ul class="mdui-menu" id="example-2">
                                 <li class="mdui-menu-item">
@@ -156,7 +160,7 @@
 	        audio.appendChild(embed);
         	document.body.appendChild(audio);
 		}
-		if(typeof(publiced)=="undefined") console.log("%c语音代码贡献者：学神之女。网站：https://www.dffzmxj.com","color:red;font-size:16px;");
+		if(typeof(publiced)=="undefined") console.log("%c语音代码贡献者：学神之女。网站：https://www.dffzmxj.com<br/>使用此控制台可能会让攻击者利用 Self-XSS（自跨站脚本）攻击来冒充你，并窃取你的信息。请勿输入或粘贴你不明白的代码。","color:red;font-size:16px;");
 		var publiced = true;
 </script>
 <script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
@@ -173,5 +177,41 @@
     "hash": "8adcf9ff20a03efd6b683583d61ac7e4"
 });
 tpwidget("show");</script>
+
+          <div class="mdui-dialog" id="Advanced-1">
+            <div class="mdui-dialog-content">
+            <ul class="mdui-list">
+                
+              <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">camera_rear</i>
+                <div class="mdui-list-item-content">匿名发布</div>
+                <label class="mdui-switch">
+                  <input type="checkbox" disabled/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+              </li>
+
+              <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">camera_front</i>
+                <div class="mdui-list-item-content">私信作者</div>
+                <label class="mdui-switch">
+                  <input type="checkbox" disabled/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+              </li>
+
+              <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">loop</i>
+                <div class="mdui-list-item-content">重置留言区</div>
+              </li>
+            
+            </ul>
+            </div>
+            <div class="mdui-dialog-actions">
+              <button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
+              <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>discard</button>
+            </div>
+          </div>
+
     </body>
 </html>

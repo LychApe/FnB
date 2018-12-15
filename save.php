@@ -75,7 +75,7 @@ if(isset($_POST['Message'])&&!empty(trim($_POST['Message']))) {
       <div class="mdui-card border-comm">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">错误</div>
-          <div class="mdui-card-primary-subtitle">Eeeor!</div>
+          <div class="mdui-card-primary-subtitle">Error!</div>
         </div>
         <div class="mdui-card-content">1.留言内容数据不正确！</div>
         <div class="mdui-card-actions">
@@ -108,7 +108,7 @@ if(isset($_POST['User'])&&!empty(trim($_POST['User']))) {
       <div class="mdui-card border-comm">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">错误</div>
-          <div class="mdui-card-primary-subtitle">Eeeor!</div>
+          <div class="mdui-card-primary-subtitle">Error!</div>
         </div>
         <div class="mdui-card-content">1.用户名数据不正确！</div>
         <div class="mdui-card-actions">
@@ -141,7 +141,7 @@ if(isset($_POST['QQ'])&&!empty(trim($_POST['QQ']))) {
       <div class="mdui-card border-comm">
         <div class="mdui-card-primary">
           <div class="mdui-card-primary-title">错误</div>
-          <div class="mdui-card-primary-subtitle">Eeeor!</div>
+          <div class="mdui-card-primary-subtitle">Error!</div>
         </div>
         <div class="mdui-card-content">1.QQ数据不正确！</div>
         <div class="mdui-card-actions">
