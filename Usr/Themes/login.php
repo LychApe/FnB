@@ -14,10 +14,9 @@
     <header class="mdui-appbar mdui-appbar-fixed">
       <div class="mdui-toolbar mdui-color-theme">
         <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">&#xe3e7;</i></span>
-        <a href="" class="mdui-typo-title">FnB 1.0.5</a>
-        <a href="" class="mdui-typo-title"></a>
+            <a href="javascript:;" class="mdui-typo-headline">FnB</a>
+        <a href="javascript:;" class="mdui-typo-title">Login</a>
         <div class="mdui-toolbar-spacer"></div>
-        <a href="index.php" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
         <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
       </div>
     </header>
@@ -28,32 +27,16 @@
     list-style: none;
     background-color: transparent;
     }
-    @font-face {
-  font-family: 'FnBFont';
-  src: url('Usr/Themes/Static/FnB.ttf');
-  }
 </style>
     <div class="mdui-drawer mdui-color-grey-50" id="main-drawer">
       <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
-            
-      <div class="mdui-card">
-        <div class="mdui-card-media">
-          <img src="https://api.i-meto.com/bing?category=space"/>
-          <div class="mdui-card-media-covered">
-            <div class="mdui-card-primary">
-              <div class="mdui-card-primary-subtitle"><div id="tp-weather-widget"></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-        
             <a href="index.php">
               <li class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue">&#xe88a;</i>
                 <div class="mdui-list-item-content">首  页</div>
               </li>
             </a>
-            <div class="mdui-collapse-item mdui-collapse-item-dense">
+            <div class="mdui-collapse-item mdui-collapse-item-open">
               <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-purple">account_box</i>
                 <div class="mdui-list-item-content">用  户</div>
@@ -76,41 +59,8 @@
                 </a>
               </div>
             </div>
-            <div class="mdui-collapse-item mdui-collapse-item-open">
-              <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">near_me</i>
-                <div class="mdui-list-item-content">功  能</div>
-                <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-              </div>
-              <div class="mdui-collapse-item-body mdui-list">
-                <a href="ClassSchedule.php">
-                    <li class="mdui-list-item mdui-ripple">
-                      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe8b0;</i>
-                      <div class="mdui-list-item-content">TODO</div>
-                    </li>
-                </a>
-                <a href="ClassSchedule.php">
-                    <li class="mdui-list-item mdui-ripple">
-                      <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86d;</i>
-                      <div class="mdui-list-item-content">笔 记</div>
-                    </li>
-                </a>
-              </div>
-            </div> 
             
           <div class="mdui-divider"></div>
-          
-            <a>
-            <li class="mdui-list-item mdui-ripple">
-                <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-indigo">&#xe0b7;</i>
-                <span class="mdui-list-item-content mdui-text-color-theme-text">留言点滴</span>
-                <span class="mdui-list-item-avatar gradient-color-red">
-                    <?php 
-                    echo mysqli_num_rows( $ALLNUM );
-                    ?>
-                </span>
-            </li>
-            </a>
             
             <a>
     		  <li class="mdui-list-item mdui-ripple" mdui-dialog="{target:'#about_FnMB'}">
@@ -121,7 +71,76 @@
     
         </div>
       </div>
-      
+
+<style>
+.comment-section {
+top: 20%;
+transform: translateY(-40%);
+}
+</style>
+<!--position: absolute;-->
+
+<div class="mdui-color-indigo-a400">
+    <div class="mdui-container">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </div>
+</div>
+    <div class="mdui-container comment-section">
+        <div class="mdui-card border-comm-2">
+          <div class="mdui-row">
+          <form action="save.php" method="post" accept-charset="utf-8">
+              <!--Card_2-->
+                <div class="mdui-col-lg-6">
+                <div class="mdui-col-sm-12">
+                    <div class="mdui-textfield">
+                        <i class="mdui-icon material-icons">account_circle</i>
+                        <input class="mdui-textfield-input" name="User" type="User" placeholder="User"/>
+                    </div>
+                </div>
+                </div>
+                <div class="mdui-col-lg-6">
+                <div class="mdui-col-sm-12">
+                  <div class="mdui-textfield">
+                      <i class="mdui-icon material-icons">https</i>
+                      <input class="mdui-textfield-input" name="password" type="password" placeholder="Password"/>
+                  </div>
+                </div>
+                </div>
+                <br/>
+                <!--<div class="mdui-clearfix">-->
+                  <div class="mdui-float-right">
+                      <div class="mdui-row mdui-row-gapless">
+                             <input type="submit" class="mdui-btn mdui-btn-raised mdui-color-deep-purple-accent border-comm-3" id="Post" value=" 发 射 ! " />
+                      </div>
+                  </div>
+                  
+                  </form>
+                  
+                  <div class="mdui-float-left">
+                      <div class="mdui-row mdui-row-gapless">
+                          <button class="mdui-btn mdui-btn-raised mdui-color-deep-purple-accent border-comm-3" mdui-dialog="{target: '#Advanced-1'}"> ! 级 高 </button>
+                      </div>
+                  </div>
+                <!--</div>-->
+          </div>
+        </div>
+            </div>
+
           <div class="mdui-dialog" id="about_FnMB">
             <div class="mdui-dialog-title">关于 FnB </div>
             <div class="mdui-dialog-content">
@@ -141,4 +160,9 @@
               <button class="mdui-btn mdui-ripple" mdui-dialog-close>知 道 啦 !</button>
             </div>
           </div>
+
           
+          
+        <script src="Usr/Themes/Static/js/mdui.min.js"></script>
+    </body>
+</html>
